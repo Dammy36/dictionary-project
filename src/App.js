@@ -1,10 +1,15 @@
+import Dictionary from "./Dictionary";
+import "./Dictionary";
 function App() {
   return (
-    <div className="App">
+    <div className="header">
       <header>
-        <h1>Hello world</h1>
-        <button>Click Me</button>
+        <main>
+          <Dictionary />
+        </main>
       </header>
+
+      <footer>Coded by Damy</footer>
     </div>
   );
 }
