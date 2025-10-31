@@ -3,9 +3,11 @@ function Meaning(props) {
   return (
     <div>
       <h3> {props.meanings.partOfSpeech}</h3>
-      {props.meanings.definitions.map(function (definition, index) {
+      {props.meanings.definition.map(function (definition, index) {
         return (
           <div key={index}>
+            <p>{definition.definition}</p>
+            <br />
             <em>{definition.example}</em>
           </div>
         );
