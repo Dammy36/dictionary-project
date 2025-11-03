@@ -1,15 +1,14 @@
 import Dictionary from "./Dictionary";
 import "./Dictionary";
+import "./App.css";
 function App() {
   return (
-    <div className="header">
+    <div className="App-header">
       <header>
-        <main>
-          <Dictionary />
-        </main>
+        <Dictionary defaultKeyWord="Sunset" />
       </header>
 
-      <footer>Coded by Damy</footer>
+      <footer className="App-footer">Coded by Damy</footer>
     </div>
   );
 }

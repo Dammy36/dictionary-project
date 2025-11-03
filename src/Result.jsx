@@ -1,5 +1,6 @@
 import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
+import "./Result.css";
 function Result(props) {
   if (props.result) {
     return (
