@@ -6,10 +6,14 @@ function Meaning(props) {
     <div>
       <h3> {props.meanings.partOfSpeech}</h3>
       <div>
-        <p>{props.meanings.definition}</p>
+        <p>
+          <strong>Meaning:</strong> {props.meanings.definition}
+        </p>
         <br />
-        <em>{props.meanings.example}</em>
-        <Synonyms Synonyms={props.meanings.synonyms} />
+        <em>
+          <strong>Example:</strong> {props.meanings.example}
+        </em>
+        <Synonyms synonyms={props.meanings.synonyms} />
       </div>
     </div>
   );

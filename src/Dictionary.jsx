@@ -23,13 +23,15 @@ function Dictionary() {
     setKeyword(event.target.value);
   }
   return (
-    <div>
-      <h1 className="dictionary">Hello</h1>
-      <form onSubmit={submit}>
-        <input type="search" onChange={updateKeyword} />
-      </form>
-      <Result result={result} />
-    </div>
+    <section>
+      <div>
+        <h1 className="dictionary">Hello</h1>
+        <form onSubmit={submit}>
+          <input type="search" onChange={updateKeyword} />
+        </form>
+        <Result result={result} />
+      </div>
+    </section>
   );
 }
 export default Dictionary;
