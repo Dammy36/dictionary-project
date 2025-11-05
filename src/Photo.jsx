@@ -1,6 +1,5 @@
 import "./photo.css";
 function Photo(props) {
-  console.log(props.photo);
   if (props.photo) {
     return (
       <section className="Photo">
